@@ -4,8 +4,8 @@ from math import *
 #constants
 plus_value = -100
 multiply_value = 1.9
-gamma_const = 5
-c_const_log = 10
+gamma_const = 0.8
+c_const_log = 100
 c_const = 1
 
 
@@ -21,7 +21,7 @@ img = Image.open("./image.jpg")
 img_data = img.convert("L").getdata()
 
 #import picture2 and convert it to L mode (only one component)
-img2 = Image.open("./image2.jpg")
+img2 = Image.open("./image3.jpg")
 img2_data = img2.convert("L").getdata()
 
 #add constant
@@ -44,7 +44,7 @@ for i in img_data:
 
 #neg
 for i in img_data:
-    lst_neg.append(255 - 1 - i)
+    lst_neg.append(256 - 1 - i)
 
 #log
 for i in img2_data:
