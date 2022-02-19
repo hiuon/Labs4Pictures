@@ -4,7 +4,7 @@ from math import *
 #constants
 plus_value = -100
 multiply_value = 1.9
-gamma_const = 0.8
+gamma_const = 2
 c_const_log = 100
 c_const = 1
 
