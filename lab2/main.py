@@ -8,7 +8,7 @@ def linear_contr(x, xmin, xmax):
     return int(((x-xmin)/(xmax-xmin)) * (255 - 0) + 0)
 
 #import picture1 and convert it to L mode (only one component)
-img      = Image.open("./image2.jpg")
+img      = Image.open("./image.jpg")
 img_data = img.convert("L").getdata()
 
 
@@ -99,7 +99,7 @@ for i in img_data:
             temp.append(0)
         else:
             temp.append(255)
-        i /= 2
+        i = int(i/2)
     lst1.append(temp[0])
     lst2.append(temp[1])
     lst3.append(temp[2])
