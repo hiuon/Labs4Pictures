@@ -16,13 +16,14 @@ for i in range(len(lst_mask)):
     for j in range(len(lst_mask[i])):
         coef += lst_mask[i][j]
 
-lst_mask_gauss = [[1, 2, 1],
-                  [2, 4, 2],
-                  [1, 2, 1]]
+lst_mask_gauss = [[0, 1, 0],
+                  [1, -4, 1],
+                  [0, 1, 0]]
 coef_gauss = 0
 for i in range(len(lst_mask_gauss)):
     for j in range(len(lst_mask_gauss[i])):
         coef_gauss += lst_mask_gauss[i][j]
+coef_gauss = 1
 
 lst_mask_laplas = [[0,  1, 0],
                    [1, -4, 1],
